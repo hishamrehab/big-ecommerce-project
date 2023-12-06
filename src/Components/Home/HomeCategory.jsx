@@ -15,7 +15,7 @@ const HomeCategory = () => {
         <CategoryCart title="Electrical devices" img={BlouseJeans} />
         <CategoryCart title="Fashion" img={BlouseShairt} />
         <CategoryCart title="Games" img={BlouseShairt} />
-        <CategoryCart title="mobilePhones" img={BlouseShairt} />
+        <CategoryCart title="Mobiles" img={BlouseShairt} />
       </div>
     </>
   );

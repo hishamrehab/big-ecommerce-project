@@ -16,6 +16,7 @@ const CategoryCart = ({ background, img, title }) => {
           style={{
             backgroundColor: "#777",
             height: "150px",
+            width:"100px",
             borderRadius: "60%",
           }}
         >
