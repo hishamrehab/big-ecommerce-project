@@ -3,7 +3,6 @@ import ecommercelogo from "../../Images/ecommmerce.png";
 import { Box, Typography } from "@mui/material";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import { Link } from "@mui/material";
 
 const NavBarLogin = () => {
   return (
