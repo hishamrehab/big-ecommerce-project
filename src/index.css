@@ -1,3 +1,24 @@
-html {
-  font-family: 'Montserrat', sans-serif;
+/* NavBar */
+input.form-control{
+  position: relative;
+  text-align: center;
+
 }
+
+label {
+position: absolute;
+top: 0;
+margin-left: 15px;
+font-size: 20px;
+color: black;
+
+}
+
+input:hover {
+  background-color: aliceblue;
+}
+
+
+
+/* ./NavBar */
+
