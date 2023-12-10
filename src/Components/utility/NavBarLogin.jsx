@@ -1,6 +1,6 @@
 import React from "react";
 import ecommercelogo from "../../Images/ecommmerce.png";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography , Link} from "@mui/material";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
@@ -23,13 +23,15 @@ const NavBarLogin = () => {
         flexWrap: "nowrap",
       }}
     >
-      <img
-        src={ecommercelogo}
-        style={{
-          with: "170px",
-          height: "30px",
-        }}
-      />
+      <a href="/">
+        <img
+          src={ecommercelogo}
+          style={{
+            with: "200px",
+            height: "40px",
+          }}
+        />
+      </a>
 
       <div className="input-group ">
         <div className=" flex-grow-1 " data-mdb-input-init>
@@ -39,25 +41,30 @@ const NavBarLogin = () => {
           </label>
         </div>
       </div>
-      <Box
-        sx={{
-          display: "flex",
-          cursor: "pointer",
-        }}
-      >
-        <AccountCircleIcon />
-        <Typography>Login</Typography>
-      </Box>
 
-      <Box
-        sx={{
-          display: "flex",
-          cursor: "pointer",
-        }}
-      >
-        <ShoppingCartIcon />
-        <Typography>Cart</Typography>
-      </Box>
+      <Link href="login">
+        <Box
+          sx={{
+            display: "flex",
+            cursor: "pointer",
+          }}
+        >
+          <AccountCircleIcon />
+          <Typography>Login</Typography>
+        </Box>
+      </Link>
+
+      <Link href="/cart">
+        <Box
+          sx={{
+            display: "flex",
+            cursor: "pointer",
+          }}
+        >
+          <ShoppingCartIcon />
+          <Typography>Cart</Typography>
+        </Box>
+      </Link>
     </Box>
   );
 };

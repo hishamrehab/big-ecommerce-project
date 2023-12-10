@@ -1,12 +1,25 @@
 import React from "react";
 import HomePage from "./Pages/Home/HomePage";
-import CardProductsCotainer from "./Components/Products/CardProductsCotainer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NavBarLogin from "./Components/utility/NavBarLogin";
+import Footer from "./Components/utility/Footer";
+import LoginPage from "./path/LoginPage";
+import Register from "./path/Register";
+
 
 function App() {
   return (
-    <div >
-       <HomePage />
-    
+    <div className="font">
+      <NavBarLogin />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/categorypage" element={<CategoryPage />}/>
+        </Routes>
+      </BrowserRouter>
+      <Footer />
     </div>
   );
 }
