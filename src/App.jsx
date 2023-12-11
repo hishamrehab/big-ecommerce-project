@@ -5,7 +5,7 @@ import NavBarLogin from "./Components/utility/NavBarLogin";
 import Footer from "./Components/utility/Footer";
 import LoginPage from "./path/LoginPage";
 import Register from "./path/Register";
-
+import CategoryPage from "./Pages/Category/CategoryPage";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/categorypage" element={<CategoryPage />}/>
+          <Route path="/categorypage" element={<CategoryPage />} />
         </Routes>
       </BrowserRouter>
       <Footer />

@@ -8,7 +8,7 @@ import CategoryCart from "../Category.jsx/CategoryCart";
 const HomeCategory = () => {
   return (
     <>
-      <SubTitle title="More" btntitle="Categories" />
+      <SubTitle title="More" btntitle="Categories" pathText={"/categorypage"} />
       <div className="d-flex flex-row  flex-wrap">
         <CategoryCart title="hello" img={BlackShirt} />
         <CategoryCart title="Sportswear" img={BlackShirt2} />

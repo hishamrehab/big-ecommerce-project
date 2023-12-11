@@ -1,9 +1,13 @@
-import React from 'react'
-
+import React from "react";
+import CategoryContainer from "../../Components/Category.jsx/CategoryContainer";
+import PaginationRounded from "../../Components/utility/Pagination";
 const CategoryPage = () => {
   return (
-    <div>CategoryPage</div>
-  )
-}
+    <div>
+      <CategoryContainer />
+      <PaginationRounded />
+    </div>
+  );
+};
 
-export default CategoryPage
+export default CategoryPage;
